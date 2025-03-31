@@ -1,0 +1,100 @@
+body{
+    margin:0;
+}
+
+#main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.todo-list{
+    list-style-type: none;
+}
+
+
+.task{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.todo-list > li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+
+}
+
+.delete, .done, .edit, .priority1, .priority2, .priority3{
+    margin-left:  10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    height: 15px;
+    width: 15px;
+    font-size: 7px;
+    padding: 0;
+}
+
+.delete:hover{
+    border: 2px solid red;
+}
+.done:hover{
+    border: 2px solid green
+}
+.edit.hover{
+    border: 2px solid lightblue
+}
+
+.delete:focus{
+    border: 2px solid black;
+    color: grey;
+}
+
+.edit:focus{
+    border: 2px solid blue
+}
+
+.task > div, .task > button{
+    
+}
+
+#buttonContainer{
+    margin-top:  10px;
+}
+
+#addButton{
+    background-color: pink;
+    border: 1px solid pink;
+    border-radius: 40px;
+    padding: 5px 20px;
+    
+}
+.done-task{
+    background-color: green;
+}
+
+/* ChatGPT prompt - "How do i make a 3 stage based priority system?" */
+
+.low-priority {
+    background-color: lightgreen !important;
+}
+
+.medium-priority {
+    background-color: lightyellow !important;
+}
+
+.high-priority {
+    background-color: lightcoral !important;
+    font-weight: bold; /* ChatGPT prompt - "This is how my CSS file looks like. Does everything work */
+}
+
+
+h2{
+    text-align: center;
+    font-size: 1.25rem;
+}
